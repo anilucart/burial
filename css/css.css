@@ -129,3 +129,13 @@
     max-width: 100%;
     border-radius: 6px;
   }
+  .product {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+  }
+  .product img {
+    max-width: 100%;
+    height: auto;
+  }
