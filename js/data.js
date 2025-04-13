@@ -31,4 +31,17 @@ async function loadData() {
     }
   }
   
-  document.addEventListener('DOMContentLoaded', loadData);
+  document.addEventListener('DOMContentLoaded', () => {
+    loadData();
+  
+    const toggle = document.getElementById('menu-toggle');
+    const navList = document.getElementById('nav-list');
+  
+    toggle.addEventListener('click', () => {
+      navList.classList.toggle('show');
+    });
+  });
+  const name = row.c[0]?.v?.trim() || 'Без назви';
+  <img src="${img}" alt="${name}" />
+
+ 

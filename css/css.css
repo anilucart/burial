@@ -139,3 +139,48 @@
     max-width: 100%;
     height: auto;
   }
+  .nav {
+    position: relative;
+  }
+  
+  .menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+  }
+  
+  .nav-list {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    padding-left: 0;
+  }
+  .nav-list li a {
+    text-decoration: none;
+    color: white; /* було black */
+    font-weight: bold;
+  }
+  .nav-list li a:hover {
+    color: #ddd;
+  }
+  /* Мобільна версія */
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+    }
+  
+    .nav-list {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      background: #fff;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    }
+  
+    .nav-list.show {
+      display: flex;
+    }
+  }
